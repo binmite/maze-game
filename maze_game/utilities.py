@@ -2,7 +2,7 @@ import os
 
 class Utilities:
 
-     def clear():
+    def clear():
         os.system('cls' if os.name == 'nt' else 'clear')
 
     def menu():
@@ -13,14 +13,14 @@ class Utilities:
         print("3. Hard")
 
     def choice(min_val, max_val):
-    while True:
-        try:
-            user_input = int(input())
-            if min_val <= user_input <= max_val:
-                return user_input
-            print(f"Пожалуйста, введите число от {min_val} до {max_val}:")
-        except ValueError:
-            print(f"Пожалуйста, введите число от {min_val} до {max_val}:")
+        while True:
+            try:
+                user_input = int(input())
+                if min_val <= user_input <= max_val:
+                    return user_input
+                print(f"Пожалуйста, введите число от {min_val} до {max_val}:")
+            except ValueError:
+                print(f"Пожалуйста, введите число от {min_val} до {max_val}:")
 
     def start():
         while True():
