@@ -5,6 +5,13 @@ class Utilities:
     def clear():
         os.system('cls' if os.name == 'nt' else 'clear')
 
+    def return_to_main_menu():
+        int(num) = choice(0, 0)
+        match num:
+            case 0:
+                clear()
+                menu()
+
     def menu():
         clear()
         print("Select difficulty level:")
@@ -24,8 +31,8 @@ class Utilities:
 
     def start():
         while True():
-            int(choice) = choice(1, 3)
-            match choice:
+            int(num) = choice(1, 3)
+            match num:
                 case 1:
                     #тут будет отрисовываться карта для изи
                     break
@@ -33,6 +40,6 @@ class Utilities:
                     #тут будет отрисовываться карта для медиума
                     break
                 case 3:
-                    ##тут будет отрисовываться карта для харда
+                    #тут будет отрисовываться карта для харда
                     break
             
