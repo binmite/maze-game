@@ -23,4 +23,6 @@ class Player:
         map[new_x][new_y], map[self.x][self.y] = '@', '-' 
         self.x = new_x
         self.y = new_y 
+        for line in map:
+            print(''.join(''.join(line)))
 
